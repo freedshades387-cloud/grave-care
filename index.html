@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grave Care Services</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="lang-switch">
+  <button onclick="setLang('en')">English</button>
+  <button onclick="setLang('hy')">Հայերեն</button>
+</div>
+
+  <!-- LANGUAGE SWITCH -->
+  <div id="lang-switch">
+    <button onclick="setLang('en')">English</button>
+    <button onclick="setLang('hy')">Հայերեն</button>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="overlay">
+      <h1 data-en="Grave Care Services in USA & Armenia"
+          data-hy="Դամբարանների խնամքի ծառայություններ ԱՄՆ‑ում և Հայաստանում"></h1>
+
+      <p data-en="Professional care, flowers, cleaning, photo & video reports"
+         data-hy="Պրոֆեսիոնալ խնամք, ծաղիկներ, մաքրում, լուսանկար և վիդեո հաշվետվություն"></p>
+
+      <button onclick="scrollToPackages()"
+              data-en="View Packages"
+              data-hy="Դիտել փաթեթները"></button>
+    </div>
+  </section>
+
+  <!-- LOCATIONS -->
+  <section id="locations">
+    <h2 data-en="We Work In" data-hy="Մենք աշխատում ենք"></h2>
+
+    <div class="loc-grid">
+      <div class="loc">Armenia</div>
+      <div class="loc">Washington</div>
+      <div class="loc">Boston</div>
+      <div class="loc">Glendale</div>
+    </div>
+  </section>
+
+  <!-- PACKAGES -->
+  <section id="packages">
+    <h2 data-en="Service Packages" data-hy="Ծառայությունների փաթեթներ"></h2>
+
+    <div class="packages-grid">
+
+      <div class="package">
+        <img src="img/basic.jpg" class="pkg-img">
+        <h3 data-en="Basic Package" data-hy="Հիմնական փաթեթ"></h3>
+        <p data-en="3 visits per year. Flowers + grave maintenance."
+           data-hy="Տարվա 3 այց. Ծաղիկներ + դամբարանի խնամք։"></p>
+        <div class="price">$199 / year</div>
+        <button onclick="orderPackage('Basic Package')"
+                data-en="Order"
+                data-hy="Պատվիրել"></button>
+      </div>
+
+      <div class="package">
+        <img src="img/standard.jpg" class="pkg-img">
+        <h3 data-en="Standard Package" data-hy="Ստանդարտ փաթեթ"></h3>
+        <p data-en="6 visits per year. Flowers + grave maintenance."
+           data-hy="Տարվա 6 այց. Ծաղիկներ + դամբարանի խնամք։"></p>
+        <div class="price">$349 / year</div>
+        <button onclick="orderPackage('Standard Package')"
+                data-en="Order"
+                data-hy="Պատվիրել"></button>
+      </div>
+
+      <div class="package">
+        <img src="img/premium.jpg" class="pkg-img">
+        <h3 data-en="Premium Package" data-hy="Պրեմիում փաթեթ"></h3>
+        <p data-en="Monthly visits. Flowers + grave maintenance."
+           data-hy="Ամսական այցեր. Ծաղիկներ + դամբարանի խնամք։"></p>
+        <div class="price">$599 / year</div>
+        <button onclick="orderPackage('Premium Package')"
+                data-en="Order"
+                data-hy="Պատվիրել"></button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CHAT -->
+ <section id="chat">
+  <h2 data-en="Online Assistant" data-hy="Առցանց օգնական"></h2>
+
+  <div id="messages"></div>
+
+  <div id="chat-input">
+    <input id="msgInput" placeholder="Write a message..." />
+    <button id="sendBtn" onclick="sendMessage()">➤</button>
+  </div>
+</section>
+
+  <script src="script.js"></script>
+</body>
+</html>
